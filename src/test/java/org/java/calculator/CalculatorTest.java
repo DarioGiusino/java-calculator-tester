@@ -52,8 +52,8 @@ public class CalculatorTest {
 		final float num1 = rnd.nextFloat();
 		final float num2 = rnd.nextFloat();
 		assumeTrue(num2 == 0);
-		
-		assertThrows(ArithmeticException.class, ()->Calculator.divide(num1, num2));
+
+		assertThrows(ArithmeticException.class, () -> Calculator.divide(num1, num2));
 	}
 
 	@RepeatedTest(10)
